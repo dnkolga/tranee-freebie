@@ -1,14 +1,195 @@
+:root {
+    --cream-bg-color: #F1F1F2;
+    --orange-accent-color: #F7941E;
+    --black-bg-color: #231F20;
+    --bg-header-footer: #FAFAFA;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --fs-h2-32: 32px;
+    --fs-reg-20: 20px;
+    --fs-link-18: 18px;
+    --fs-small-14: 14px;
+    --fw-reg: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fs-reg: 'Gilroy Regular';
+    --fs-semibold: 'Gilroy Semibold';
+    --fs-bold: 'Gilroy Bold';
+    --fs-fam: 'sans-serif';
+    --line-height-auto: 1.2;
+}
 
-
-
-
-
+/* MAIN */
 .hidden {
     display: none;
 }
-.inline li {
+.inline li,
+.footer li {
     display: inline;
 }
 ul {
     list-style: none;
 }
+a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: var(--orange-accent-color);
+}
+h2 {
+    font-size: var(--fs-h2-32);
+    line-height: 1.4;
+    text-align: center;
+}
+p {
+    font-size: var(--fs-reg-20);
+    line-height: 1.4;
+}
+.button {
+    font-size: var(--fs-link-18);
+    border-radius: 5%;
+    text-transform: uppercase;
+}
+.transparent {
+    background-color: transparent;
+}
+
+/* BODY */
+body {
+    font-family: var(--fs-reg), var(--fs-fam);
+    line-height: var(--line-height-auto);
+    color: var(--black-color);
+}
+.hero,
+.about {
+    background-color: var(--cream-bg-color);
+}
+.services,
+.blogs {
+    background-color: var(--white-color);
+}
+
+
+/* HEADER+FOOTER */
+.header .footer {
+    background-color: var(--bg-header-footer);
+}
+.nav-link {
+    font-size: var(--fs-link-18);
+}
+.header .button,
+.about .button {
+    color: var(--orange-accent-color);
+    border-color: var(--orange-accent-color);
+}
+/* HERO */
+.hero h1 {
+    font-weight: var(--fw-semibold);
+    font-size: 56px;
+}
+.hero .button {
+    color: var(--white-color);
+    background-color: var(--orange-accent-color);
+    border-style: none;
+}
+.services-p,
+.blogs-p
+.blogs .list p {
+    font-size: var(--fs-link-18);
+    line-height: 1.36;
+    text-align: center;
+}
+.services h3 {
+    font-size: var(--fs-reg-20);
+}
+.services a {
+    font-size: var(--fs-small-14);
+    line-height: 1.35;
+}
+.signup {
+    background-color: var(--orange-accent-color);
+}
+.signup .signup-p {
+    font-weight: var(--fw-bold);
+}
+.signup p {
+    font-size: var(--fs-h2-32);
+}
+.signup .but-black {
+    background-color: var(--black-bg-color);
+    color: var(--white-color);
+}
+.blogs div {
+    background-color: var(--black-bg-color);
+    color:var(--white-color)
+}
+.blogs .small  {
+    font-size: var(--fs-small-14);
+}
+.blogs .big {
+    font-size: 48px;
+}
+.blogs div a {
+    color:var(--white-color);
+    font-size: var(--fs-link-18);
+}
+.blogs .small,
+.blogs div a {
+    line-height: 1.4;
+}
+.blogs h3 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+.blogs .list a {
+    font-size: var(--fs-small-14);
+    line-height: 1.4;
+}
+.social-links,
+.footer .text {
+    text-align: center;
+}
+
+
+
+/* @font-face {
+    font-family: 'Gilroy Regular';
+    src: url('Gilroy-Regular.eot');
+    src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Regular.woff') format('woff'),
+    url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('Gilroy-SemiBold.eot');
+    src: url('Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-SemiBold.woff') format('woff'),
+    url('Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'Gilroy Bold';
+    src: url('Gilroy-Bold.eot');
+    src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Bold.woff') format('woff'),
+    url('Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    } */
+    @font-face {
+        font-family: 'Gilroy Regular';
+        src: url(/fonts/Gilroy-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'Gilroy Semibold';
+        src: url(/fonts/Gilroy-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: 'Gilroy Bold';
+        src: url(/fonts/Gilroy-Bold.ttf);
+    }
