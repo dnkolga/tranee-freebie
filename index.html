@@ -12,7 +12,7 @@
     <header class="header">
         <nav class="inline">
         <img src="./img/logo.png" alt="Company logo" width="41px" height="39px">
-        <ul>
+        <ul class="nav-list">
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About Us</a></li>
             <li><a href="#services" class="nav-link">Services</a></li>
@@ -24,12 +24,12 @@
     <main>
         <!-- HERO -->
         <section class="hero" id="home"> 
-            <div>
+            <div class="container">
                 <h1>Find a gift for your wife or girlfriend</h1>
                 <p>Struggling to find a gift for your wife or girlfriend? No problem!</p>
                 <button type="button" class="button">Find gift now</button>
+                <img src="./img/photo1.jpg" alt="Happy couple" width="719px" height="700px" >
             </div>
-            <img src="./img/photo1.jpg" alt="Happy couple" width="719px" height="700px" >
         </section>
         <!-- ABOUT -->
         <section class="about" id="about">
@@ -44,30 +44,33 @@
         <section class="services" id="services"> 
             <h2>Gifts for all Occasions</h2>
             <p class="services-p">“Try our web app to find the best gifts for all occasions”</p>
-            <ul> 
+            <ul class="services-list"> 
                 <li>
-                    <img src="./img/gift1.jpg" alt="Birthday gift" width="270px" height="270px">
+                    <div class="container">
+                        <img src="./img/gift1.jpg" alt="Birthday gift" width="270px" height="270px">
                         <h3>Birthday</h3>
                         <a href="">See More ›</a>
-                    </img>
+                    </div>
                 </li>
                 <li>
-                    <img src="./img/gift2.jpg" alt="Anniversary gift" width="270px" height="270px">
+                    <div class="container">
+                        <img src="./img/gift2.jpg" alt="Anniversary gift" width="270px" height="270px">
                         <h3>Anniversary</h3>
                         <a href="">See More ›</a>
-                    </img>
+                    </div>
                 </li>
                 <li>
-                    <img src="./img/gift3.jpg" alt="Valentine's Day gift" width="270px" height="270px">
+                    <div class="container">
+                        <img src="./img/gift3.jpg" alt="Valentine's Day gift" width="270px" height="270px">
                         <h3>Valentine's Day</h3>
-                        <a href="">See More ›</a>
-                    </img>
+                        <a href="">See More ›</a></div>
                 </li>
                 <li>
-                    <img src="./img/gift4.jpg" alt="Christmas" width="270px" height="270px">
+                    <div class="container">
+                        <img src="./img/gift4.jpg" alt="Christmas" width="270px" height="270px">
                         <h3>Christmas</h3>
                         <a href="">See More ›</a>
-                    </img>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -85,8 +88,9 @@
         <section class="blogs" id="blogs">
             <h2>Our Best Blogs Ever</h2>
             <p class="blogs-p">“Try our blog to find the best tips and tricks to select your gift”</p>
-            <img src="./img/photo3.jpg" alt="Happy just merried" width="400px" height="370px">
-            <div>
+            <div>    
+                <img src="./img/photo3.jpg" alt="Happy just merried" width="400px" height="370px">
+
                 <p class="small">Mr. John Doe</p>
                 <p class="big">The best way to wish your wife</p>
                 <a href="">Read More</a>
@@ -107,15 +111,17 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
+        <nav>
         <ul>
             <li><a href="./index.html"></a>Home</li>
-            <li><a href=""></a>About Us</li>
+            <li><a href="#about"></a>About Us</li>
         </ul>
         <img src="./img/orangelogo.png" alt="Company logo" width="41px" height="39px" >
         <ul>
-            <li><a href=""></a>Services</li>
-            <li><a href=""></a>Blogs</li>
+            <li><a href="#services"></a>Services</li>
+            <li><a href="#blogs"></a>Blogs</li>
         </ul>
+        </nav>
         <ul class="social-links">
             <li><a href="" aria-label="Facebook Link"></a><img src="./img/icon1.png" alt="Facebook Link" width="40px" height="40px"></li>
             <li><a href="" aria-label="Twitter Link"></a><img src="./img/icon2.png" alt="Twitter Link" width="40px" height="40px"></li>

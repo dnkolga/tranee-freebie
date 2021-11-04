@@ -70,6 +70,13 @@ body {
 .blogs {
     background-color: var(--white-color);
 }
+.services-list .container {
+    width: 270px;
+    height: 436px;
+} 
+.services-list li {
+    display: inline-block;
+}
 
 
 /* HEADER+FOOTER */
@@ -94,6 +101,7 @@ body {
     background-color: var(--orange-accent-color);
     border-style: none;
 }
+
 .services-p,
 .blogs-p
 .blogs .list p {
