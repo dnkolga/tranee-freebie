@@ -1,138 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Freebie</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="inline">
-        <img src="./img/logo.png" alt="Company logo" width="41px" height="39px">
+      <nav class="inline">
+        <img
+          src="./img/logo.png"
+          alt="Company logo"
+          width="41px"
+          height="39px"
+        />
         <ul class="nav-list">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About Us</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#blogs" class="nav-link">Blogs</a></li>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item"><a href="#blogs" class="nav-link">Blogs</a></li>
         </ul>
-        </nav>
-        <button type="button" class="button transparent">GIFT FINDER</button>
+      </nav>
+      <button type="button" class="btn nav-btn">GIFT FINDER</button>
     </header>
     <main>
-        <!-- HERO -->
-        <section class="hero" id="home"> 
-            <div class="container">
-                <h1>Find a gift for your wife or girlfriend</h1>
-                <p>Struggling to find a gift for your wife or girlfriend? No problem!</p>
-                <button type="button" class="button">Find gift now</button>
-                <img src="./img/photo1.jpg" alt="Happy couple" width="719px" height="700px" >
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-box container">
+          <h1 class="hero-header">Find a gift for your wife or girlfriend</h1>
+          <p class="hero-text">
+            Struggling to find a gift for your wife or girlfriend? No problem!
+          </p>
+          <button type="button" class="btn hero-btn">Find gift now</button>
+          <img
+            src="./img/photo1.jpg"
+            alt="Happy couple"
+            width="719px"
+            height="700px"
+          />
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <img
+          src="./img/photo2.jpg"
+          alt="Our present card"
+          width="741px"
+          height="600"
+        />
+        <div class="about">
+          <h2 class="about-heading">How we work</h2>
+          <p class="about-text">
+            We’ve actually already asked hundreds of women what they want, and
+            made a database with the results. All you have to do is take our
+            short survey that only takes seconds, and our proprietary algorithm
+            will match you with a few perfect gift options.
+          </p>
+          <button type="button" class="btn transparent">Learn More</button>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section class="services" id="services">
+        <h2 class="services-heading">Gifts for all Occasions</h2>
+        <p class="services-text">
+          “Try our web app to find the best gifts for all occasions”
+        </p>
+        <ul class="services-list">
+          <li class="services-item">
+            <div class="service-box container">
+              <img
+                src="./img/gift1.jpg"
+                alt="Birthday gift"
+                width="270px"
+                height="270px"
+              />
+              <h3 class="services-next-heading">Birthday</h3>
+              <a href="" class="services-link">See More ›</a>
             </div>
-        </section>
-        <!-- ABOUT -->
-        <section class="about" id="about">
-            <img src="./img/photo2.jpg" alt="Our present card" width="741px" height="600">
-            <div>
-                <h2>How we work</h2>
-                <p>We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</p>
-                <button type="button" class="button transparent">Learn More</button>
+          </li>
+          <li class="services-item">
+            <div class="service-box container">
+              <img
+                src="./img/gift2.jpg"
+                alt="Anniversary gift"
+                width="270px"
+                height="270px"
+              />
+              <h3 class="services-next-heading">Anniversary</h3>
+              <a href="" class="services-link">See More ›</a>
             </div>
-        </section>
-        <!-- SERVICES -->
-        <section class="services" id="services"> 
-            <h2>Gifts for all Occasions</h2>
-            <p class="services-p">“Try our web app to find the best gifts for all occasions”</p>
-            <ul class="services-list"> 
-                <li>
-                    <div class="container">
-                        <img src="./img/gift1.jpg" alt="Birthday gift" width="270px" height="270px">
-                        <h3>Birthday</h3>
-                        <a href="">See More ›</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <img src="./img/gift2.jpg" alt="Anniversary gift" width="270px" height="270px">
-                        <h3>Anniversary</h3>
-                        <a href="">See More ›</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <img src="./img/gift3.jpg" alt="Valentine's Day gift" width="270px" height="270px">
-                        <h3>Valentine's Day</h3>
-                        <a href="">See More ›</a></div>
-                </li>
-                <li>
-                    <div class="container">
-                        <img src="./img/gift4.jpg" alt="Christmas" width="270px" height="270px">
-                        <h3>Christmas</h3>
-                        <a href="">See More ›</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <!-- SING UP -->
-        <section class="signup">
-            <h2 class="hidden">Sing up and join us</h2>
-            <p class="signup-p">Ready to get started?</p>
-            <p>Sign up or contact us</p>
-            <ul class="inline">
-                <li><button type="button" class="button but-black">Find gift now</button></li>
-                <li><button type="button" class="button transparent">how it works</button></li>
-            </ul>
-        </section>
-        <!-- BLOG -->
-        <section class="blogs" id="blogs">
-            <h2>Our Best Blogs Ever</h2>
-            <p class="blogs-p">“Try our blog to find the best tips and tricks to select your gift”</p>
-            <div>    
-                <img src="./img/photo3.jpg" alt="Happy just merried" width="400px" height="370px">
-
-                <p class="small">Mr. John Doe</p>
-                <p class="big">The best way to wish your wife</p>
-                <a href="">Read More</a>
+          </li>
+          <li class="services-item">
+            <div class="service-box container">
+              <img
+                src="./img/gift3.jpg"
+                alt="Valentine's Day gift"
+                width="270px"
+                height="270px"
+              />
+              <h3 class="services-next-heading">Valentine's Day</h3>
+              <a href="" class="services-link">See More ›</a>
             </div>
-            <ul>
-                <li class="list">
-                    <h3>Database to find the gifts for your girlfriend</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                    <a href="">Read More</a>
-                </li>
-                <li>
-                    <h3>How Artificial Intelligence read your mind to find the best gift</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                    <a href="">Read More</a>
-                </li>
-            </ul>
-        </section>
+          </li>
+          <li class="services-item">
+            <div class="service-box container">
+              <img
+                src="./img/gift4.jpg"
+                alt="Christmas"
+                width="270px"
+                height="270px"
+              />
+              <h3 class="services-next-heading">Christmas</h3>
+              <a href="" class="services-link">See More ›</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- SING UP -->
+      <section class="signup">
+        <h2 class="visually-hidden">Sing up and join us</h2>
+        <p class="signup-text">Ready to get started?</p>
+        <p class="signup-next-text">Sign up or contact us</p>
+        <ul class="signup-list">
+          <li class="signup-item">
+            <button type="button" class="btn signup-btn-gift">
+              Find gift now
+            </button>
+          </li>
+          <li class="signup-item">
+            <button type="button" class="btn signup-btn-how">
+              how it works
+            </button>
+          </li>
+        </ul>
+      </section>
+      <!-- BLOG -->
+      <section class="blogs" id="blogs">
+        <h2 class="blogs-heading">Our Best Blogs Ever</h2>
+        <p class="blogs-text">
+          “Try our blog to find the best tips and tricks to select your gift”
+        </p>
+        <div class="blogs-box container">
+          <img
+            src="./img/photo3.jpg"
+            alt="Happy just merried"
+            width="400px"
+            height="370px"
+          />
+          <p class="blogs-pre-heading">Mr. John Doe</p>
+          <h3 class="blogs-box-heading">The best way to wish your wife</h3>
+          <a href="" class="blogs-box-link">Read More</a>
+        </div>
+        <ul class="blogs-list">
+          <li class="blogs-item">
+            <h3 class="blogs-list-headind">
+              Database to find the gifts for your girlfriend
+            </h3>
+            <p class="blogs-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore...
+            </p>
+            <a href="" class="blogs-item-link">Read More</a>
+          </li>
+          <li class="blogs-item">
+            <h3 class="blogs-list-headind">
+              How Artificial Intelligence read your mind to find the best gift
+            </h3>
+            <p class="blogs-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore...
+            </p>
+            <a href="" class="blogs-item-link">Read More</a>
+          </li>
+        </ul>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-        <nav>
-        <ul>
-            <li><a href="./index.html"></a>Home</li>
-            <li><a href="#about"></a>About Us</li>
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="./index.html" class="footer-nav-link"></a>Home
+          </li>
+          <li class="footer-nav-item">
+            <a href="#about" class="footer-nav-link"></a>About Us
+          </li>
         </ul>
-        <img src="./img/orangelogo.png" alt="Company logo" width="41px" height="39px" >
-        <ul>
-            <li><a href="#services"></a>Services</li>
-            <li><a href="#blogs"></a>Blogs</li>
+        <img
+          src="./img/orangelogo.png"
+          alt="Company logo"
+          width="41px"
+          height="39px"
+        />
+        <ul class="footer-list">
+          <li class="footer-nav-item">
+            <a href="#services" class="footer-nav-link"></a>Services
+          </li>
+          <li class="footer-nav-item">
+            <a href="#blogs" class="footer-nav-link"></a>Blogs
+          </li>
         </ul>
-        </nav>
-        <ul class="social-links">
-            <li><a href="" aria-label="Facebook Link"></a><img src="./img/icon1.png" alt="Facebook Link" width="40px" height="40px"></li>
-            <li><a href="" aria-label="Twitter Link"></a><img src="./img/icon2.png" alt="Twitter Link" width="40px" height="40px"></li>
-            <li><a href="" aria-label="Instagram Link"></a><img src="./img/icon3.png" alt="Instagram Link" width="40px" height="40px"></li>
-            <li><a href="" aria-label="YouTube Link"></a><img src="./img/icon4.png" alt="YouTube Link" width="40px" height="40px"></li>
-            <li><a href="" aria-label="Pinterest Link"></a><img src="./img/icon5.png" alt="Pinterest Link" width="40px" height="40px"></li>
-        </ul>
-        <ul class="text">
-            <li><p>&#169; 2010 — 2020</p></li>
-            <li><p>Privacy — Terms</p></li>
-        </ul>
+      </nav>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Facebook Link"></a
+          ><img
+            src="./img/icon1.png"
+            alt="Facebook Link"
+            width="40px"
+            height="40px"
+          />
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Twitter Link"></a
+          ><img
+            src="./img/icon2.png"
+            alt="Twitter Link"
+            width="40px"
+            height="40px"
+          />
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Instagram Link"></a
+          ><img
+            src="./img/icon3.png"
+            alt="Instagram Link"
+            width="40px"
+            height="40px"
+          />
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="YouTube Link"></a
+          ><img
+            src="./img/icon4.png"
+            alt="YouTube Link"
+            width="40px"
+            height="40px"
+          />
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Pinterest Link"></a
+          ><img
+            src="./img/icon5.png"
+            alt="Pinterest Link"
+            width="40px"
+            height="40px"
+          />
+        </li>
+      </ul>
+      <ul class="text">
+        <li><p>&#169; 2010 — 2020</p></li>
+        <li><p>Privacy — Terms</p></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
