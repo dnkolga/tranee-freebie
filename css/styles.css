@@ -1,176 +1,179 @@
 :root {
-    --cream-bg-color: #F1F1F2;
-    --orange-accent-color: #F7941E;
-    --black-bg-color: #231F20;
-    --bg-header-footer: #FAFAFA;
-    --white-color: #ffffff;
-    --black-color: #000000;
-    --fs-h2-32: 32px;
-    --fs-reg-20: 20px;
-    --fs-link-18: 18px;
-    --fs-small-14: 14px;
-    --fw-reg: 400;
-    --fw-semibold: 600;
-    --fw-bold: 700;
-    --fs-reg: 'Gilroy Regular';
-    --fs-semibold: 'Gilroy Semibold';
-    --fs-bold: 'Gilroy Bold';
-    --fs-fam: 'sans-serif';
-    --line-height-auto: 1.2;
+  --cream-bg-color: #f1f1f2;
+  --orange-accent-color: #f7941e;
+  --black-bg-color: #231f20;
+  --bg-header-footer: #fafafa;
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
 
 /* MAIN */
 body {
-    outline: solid 5px tomato;
+  /* outline: solid 5px tomato; */
+  font-family: "Gilroy Regular", "sans-serif";
+  color: var(--black-color);
+  line-height: 1.2;
 }
-.hidden {
-    display: none;
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.inline li,
-.footer li {
-    display: inline;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 ul {
-    list-style: none;
+  list-style: none;
+  margin: 0;
 }
 a {
-    color: var(--black-color);
-    text-decoration: none;
+  color: var(--black-color);
+  text-decoration: none;
+  font-style: normal;
+  cursor: pointer;
 }
 a:hover,
 a:focus {
-    color: var(--orange-accent-color);
+  color: var(--orange-accent-color);
 }
-h2 {
-    font-size: var(--fs-h2-32);
-    line-height: 1.4;
-    text-align: center;
+.about-heading,
+.services-heading,
+.services-heading,
+.blogs-heading {
+  font-size: 32px;
+  line-height: 1.4;
+  text-align: center;
 }
 p {
-    font-size: var(--fs-reg-20);
-    line-height: 1.4;
-}
-.button {
-    font-size: var(--fs-link-18);
-    border-radius: 5%;
-    text-transform: uppercase;
-}
-.transparent {
-    background-color: transparent;
-}
-
-/* BODY */
-body {
-    font-family: var(--fs-reg), var(--fs-fam);
-    line-height: var(--line-height-auto);
-    color: var(--black-color);
+  font-size: var(--fs-reg-20);
+  line-height: 1.4;
 }
 .hero,
 .about {
-    background-color: var(--cream-bg-color);
+  background-color: var(--cream-bg-color);
 }
 .services,
 .blogs {
-    background-color: var(--white-color);
+  background-color: var(--white-color);
 }
-.services-list .container {
-    width: 270px;
-    height: 436px;
-} 
-.services-list li {
-    display: inline-block;
+.services-box {
+  width: 270px;
+  height: 436px;
 }
-
 
 /* HEADER+FOOTER */
-.header .footer {
-    background-color: var(--bg-header-footer);
+.header,
+.footer {
+  background-color: var(--bg-header-footer);
 }
 .nav-link {
-    font-size: var(--fs-link-18);
+  font-size: 18px;
 }
-.header .button,
-.about .button {
-    color: var(--orange-accent-color);
-    border-color: var(--orange-accent-color);
+.btn {
+  font-size: 18px;
+  border-radius: 5%;
+  text-transform: uppercase;
+  font-family: "Gilroy Regular", "sans-serif";
+}
+.header-btn,
+.about-btn {
+  color: var(--orange-accent-color);
+  border-color: var(--orange-accent-color);
+  background-color: transparent;
+}
+.footer-nav-link {
+  font-size: 14px;
+  font-family: "Gilroy Bold", "sans-serif";
 }
 /* HERO */
-.hero h1 {
-    font-weight: var(--fw-semibold);
-    font-size: 56px;
+.hero-heading {
+  font-weight: 600;
+  font-size: 56px;
 }
-.hero .button {
-    color: var(--white-color);
-    background-color: var(--orange-accent-color);
-    border-style: none;
+.hero-btn {
+  color: var(--white-color);
+  background-color: var(--orange-accent-color);
 }
-
-.services-p,
-.blogs-p
-.blogs .list p {
-    font-size: var(--fs-link-18);
-    line-height: 1.36;
-    text-align: center;
+.hero-text,
+.about-text {
+  font-size: 20px;
+  line-height: 1.4;
 }
-.services h3 {
-    font-size: var(--fs-reg-20);
+.services-text {
+  text-align: center;
 }
-.services a {
-    font-size: var(--fs-small-14);
-    line-height: 1.35;
+.services-text,
+.blogs-item-text {
+  font-size: 18px;
+  line-height: 1.36;
+}
+.services-next-heading {
+  font-size: 20px;
+}
+.services-link {
+  font-size: 14px;
+  line-height: 1.36;
 }
 .signup {
-    background-color: var(--orange-accent-color);
+  background-color: var(--orange-accent-color);
 }
-.signup .signup-p {
-    font-weight: var(--fw-bold);
+.signup-text {
+  font-family: "Gilroy Bold", "sans-serif";
 }
-.signup p {
-    font-size: var(--fs-h2-32);
+.signup-text,
+.signup-next-text {
+  font-size: 32px;
 }
-.signup .but-black {
-    background-color: var(--black-bg-color);
-    color: var(--white-color);
+.signup-btn-gift {
+  background-color: var(--black-bg-color);
+  color: var(--white-color);
 }
-.blogs div {
-    background-color: var(--black-bg-color);
-    color:var(--white-color)
+.signup-btn-how {
+  background-color: transparent;
 }
-.blogs .small  {
-    font-size: var(--fs-small-14);
+.blogs-box {
+  background-color: var(--black-bg-color);
+  color: var(--white-color);
 }
-.blogs .big {
-    font-size: 48px;
+.blogs-pre-heading,
+.blogs-item-link {
+  font-size: 14px;
 }
-.blogs div a {
-    color:var(--white-color);
-    font-size: var(--fs-link-18);
+.blogs-box-heading {
+  font-size: 48px;
 }
-.blogs .small,
-.blogs div a {
-    line-height: 1.4;
+.blogs-box-link {
+  color: var(--white-color);
+  font-size: 18px;
 }
-.blogs h3 {
-    font-size: 24px;
-    line-height: 1.4;
+.blogs-pre-heading,
+.blogs-box-link,
+.blogs-list-heading,
+.blogs-item-link {
+  line-height: 1.4;
 }
-.blogs .list a {
-    font-size: var(--fs-small-14);
-    line-height: 1.4;
+.blogs-list-heading {
+  font-family: "Gilroy Bold", "sans-serif";
+  font-size: 24px;
+  
 }
-.social-links,
-.footer .text {
-    text-align: center;
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url(/fonts/Gilroy-Regular.ttf);
 }
-    @font-face {
-        font-family: 'Gilroy Regular';
-        src: url(/fonts/Gilroy-Regular.ttf);
-    }
-    @font-face {
-        font-family: 'Gilroy Semibold';
-        src: url(/fonts/Gilroy-SemiBold.ttf);
-    }
-    @font-face {
-        font-family: 'Gilroy Bold';
-        src: url(/fonts/Gilroy-Bold.ttf);
-    }
+@font-face {
+  font-family: "Gilroy Semibold";
+  src: url(/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(/fonts/Gilroy-Bold.ttf);
+}
