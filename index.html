@@ -11,6 +11,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
+      <div class="nav-box">
       <nav class="inline">
         <img
           src="./img/logo.png"
@@ -18,8 +19,7 @@
           width="41px"
           height="39px"
         />
-        <div class="nav-box container">
-          <ul class="nav-list container">
+        <ul class="nav-list">
           <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
           <li class="nav-item">
             <a href="#about" class="nav-link">About Us</a>
@@ -30,8 +30,8 @@
           <li class="nav-item"><a href="#blogs" class="nav-link">Blogs</a></li>
         </ul>
       </nav>
-    </div>
       <button type="button" class="btn header-btn">GIFT FINDER</button>
+    </div>
     </header>
     <main>
       <!-- HERO -->
@@ -49,6 +49,7 @@
             width="719px"
             height="700px"
           />
+        
       </section>
       <!-- ABOUT -->
       <section class="about" id="about">
@@ -58,7 +59,7 @@
           width="741px"
           height="600"
         />
-        <div class="about">
+        <div class="about-box">
           <h2 class="about-heading">How we work</h2>
           <p class="about-text">
             We’ve actually already asked hundreds of women what they want, and
@@ -71,6 +72,7 @@
       </section>
       <!-- SERVICES -->
       <section class="services" id="services">
+        <div class="container">
         <h2 class="services-heading">Gifts for all Occasions</h2>
         <p class="services-text">
           “Try our web app to find the best gifts for all occasions”
@@ -128,21 +130,23 @@
       </section>
       <!-- SING UP -->
       <section class="signup">
-        <h2 class="visually-hidden">Sing up and join us</h2>
-        <p class="signup-text">Ready to get started?</p>
-        <p class="signup-next-text">Sign up or contact us</p>
-        <ul class="signup-list">
-          <li class="signup-item">
-            <button type="button" class="btn signup-btn-gift">
+        <div class="container">
+          <h2 class="visually-hidden">Sing up and join us</h2>
+          <p class="signup-text">Ready to get started?</p>
+          <p class="signup-next-text">Sign up or contact us</p>
+          <ul class="signup-list">
+            <li class="signup-item">
+              <button type="button" class="btn signup-btn-gift">
               Find gift now
-            </button>
-          </li>
-          <li class="signup-item">
-            <button type="button" class="btn signup-btn-how">
+              </button>
+            </li>
+            <li class="signup-item">
+              <button type="button" class="btn signup-btn-how">
               how it works
-            </button>
+              </button>
           </li>
         </ul>
+        </div>
       </section>
       <!-- BLOG -->
       <section class="blogs" id="blogs">
