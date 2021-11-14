@@ -1,3 +1,27 @@
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  cursor: pointer;
+}
+
 :root {
   --cream-bg-color: #f1f1f2;
   --orange-accent-color: #f7941e;
@@ -17,7 +41,17 @@ body {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid 5px tomato;
+  /* outline: solid 5px tomato; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.large-container {
+  width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: solid 5px tomato; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .visually-hidden {
   position: absolute;
@@ -29,20 +63,25 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-a {
-  color: var(--black-color);
-  text-decoration: none;
-  font-style: normal;
-  cursor: pointer;
-}
 a:hover,
 a:focus {
   color: var(--orange-accent-color);
+}
+
+.header-box,
+.nav-box,
+.nav-list,
+.hero-box,
+.about-box,
+.signup-box,
+.footer-nav,
+.footer-nav-list,
+.social-list,
+.signup-box-list,
+.blogs-black-box, 
+.blogs-list,
+.footer-text {
+  display: flex;
 }
 .about-heading,
 .services-heading,
@@ -54,17 +93,11 @@ p {
   font-size: var(--fs-reg-20);
   line-height: 1.4;
 }
-.hero,
-.about {
-  background-color: var(--cream-bg-color);
-}
-.services,
-.blogs {
-  background-color: var(--white-color);
-}
-.services-box {
-  width: 270px;
-  height: 436px;
+.btn {
+  font-size: 18px;
+  border-radius: 5%;
+  text-transform: uppercase;
+  font-family: inherit;
 }
 
 /* HEADER+FOOTER */
@@ -72,33 +105,20 @@ p {
 .footer {
   background-color: var(--bg-header-footer);
 }
-.nav-box {
-  width: 1440px;
+.header-box {
   margin-top: 27px;
   margin-bottom: 27px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 20.3px;
   padding-bottom: 20.3px;
-  padding-left: 80px;
-  padding-right: 40px;
-  outline: solid 5px tomato;
-}
-.nav-list {
-  padding-left: 0;
-}
-.nav-item {
-  display: inline-block;
-  
 }
 .nav-link {
   font-size: 18px;
 }
-.btn {
-  font-size: 18px;
-  border-radius: 5%;
-  text-transform: uppercase;
-  font-family: "Gilroy Regular", "sans-serif";
+.nav-item:not(:last-child) {
+  margin-right: 31px;
+}
+.header-logo {
+  margin-left: 80px;
 }
 .header-btn,
 .about-btn {
@@ -106,11 +126,61 @@ p {
   border-color: var(--orange-accent-color);
   background-color: transparent;
 }
+.header-btn {
+  padding: 13px 19px 13px 19px;
+  margin-right: 34px;
+}
+.header-box,
+.signup-box {
+  justify-content: space-between;
+}
+.header-box {
+  align-items: center;
+}
 .footer-nav-link {
   font-size: 14px;
   font-family: "Gilroy Bold", "sans-serif";
 }
+.footer-nav,
+.social-list,
+.footer-text {
+  justify-content: center;
+}
+.footer-box {
+  padding-top: 106px;
+  padding-bottom: 35px;
+}
+.footer-nav {
+  width: 1000px;
+  border-bottom: var(--black-bg-color) 1px solid;
+  padding-bottom: 43px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 55px;
+}
+.footer-nav-item:not(:last-child) {
+  margin-right: 81px;
+}
+.footer-logo {
+  margin-right: 141px;
+  margin-left: 141px;
+}
+.social-list {
+  margin-bottom: 72px;
+}
+.social-item:not(:last-child) {
+  margin-right: 24px;
+}
+.footer-text-item:not(:last-child) {
+  margin-right: 14px;
+}
+
 /* HERO */
+.hero,
+.about {
+  background-color: var(--cream-bg-color);
+}
+
 .hero-heading {
   font-weight: 600;
   font-size: 56px;
@@ -130,33 +200,28 @@ p {
   font-size: 20px;
   line-height: 1.4;
 }
-.hero-box,
-.about-box {
-  width: 1440px;
-  min-height: 700px;
-  outline: solid 5px tomato;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.hero-box {
-  padding-top: 154px;
-  padding-bottom: 135px;
-  padding-left: 162px;
-  padding-right: 854px;
-}
-.about-box{
-  padding-top: 164px;
-  padding-bottom: 104px;
-  padding-left: 833px;
-  padding-right: 166px;
+.hero-box-text {
+  padding: 154px 126px 135px 162px;
 }
 .about-heading {
   margin-top: 0;
   margin-bottom: 23px;
 }
+.about-box {
+  flex-direction: row-reverse;
+}
 .about-text {
   margin-bottom: 23px;
+  text-align: justify;
+}
+.about-box-text {
+  padding: 164px 166px 0px 112px;
+  flex-direction: column;
+}
+.hero-btn,
+.about-btn {
+  min-width: 200px;
+  min-height: 60px;
 }
 .services-heading,
 .services-text,
@@ -165,9 +230,19 @@ p {
   text-align: center;
   margin: 0;
 }
-.services-heading {
-  padding-top: 96px;
+
+/* SERVICES */
+.services {
+  margin-top: 96px;
+  margin-bottom: 137px;
+}
+.services-heading,
+.blogs-heading {
   padding-bottom: 23px;
+}
+.services,
+.blogs {
+  background-color: var(--white-color);
 }
 .services-text {
   padding-bottom: 64px;
@@ -189,8 +264,25 @@ p {
   font-size: 14px;
   line-height: 1.36;
 }
+.services-item-box {
+  width: 270px;
+  height: 436px;
+}
+.service-item-text-box {
+  padding: 24px;
+}
+.service-item-text-box:hover,
+.service-item-text-box:focus {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.services-next-heading {
+  margin-bottom: 74px;
+}
+
+/* SIGNUP */
 .signup {
   background-color: var(--orange-accent-color);
+  padding: 81px 100px 69px 100px;
 }
 .signup-text {
   font-family: "Gilroy Bold", "sans-serif";
@@ -199,13 +291,6 @@ p {
 .signup-next-text {
   font-size: 32px;
 }
-.signup-text {
-  padding-top: 81px;
-
-}
-.signup-next-text {
-  padding-bottom: 69px;
-}
 .signup-btn-gift {
   background-color: var(--black-bg-color);
   color: var(--white-color);
@@ -213,9 +298,26 @@ p {
 .signup-btn-how {
   background-color: transparent;
 }
-.blogs-box {
-  background-color: var(--black-bg-color);
-  color: var(--white-color);
+.signup-btn-gift,
+.signup-btn-how {
+  min-width: 200px;
+  min-height: 48px;
+}
+.signup-item:not(:last-child) {
+  margin-right: 16px;
+}
+.signup-box-list {
+  align-items: center;
+}
+
+
+/* BLOGS */
+.blogs {
+  padding-top: 25px;
+  padding-bottom: 80px;
+}
+.blogs-text {
+  margin-bottom: 120px;
 }
 .blogs-pre-heading,
 .blogs-item-link {
@@ -223,9 +325,9 @@ p {
 }
 .blogs-box-heading {
   font-size: 48px;
+  margin-bottom: 23px;
 }
 .blogs-box-link {
-  color: var(--white-color);
   font-size: 18px;
 }
 .blogs-pre-heading,
@@ -236,8 +338,32 @@ p {
 }
 .blogs-list-heading {
   font-family: "Gilroy Bold", "sans-serif";
-  font-size: 24px;
-  
+  font-size: 24px;  
+}
+.blogs-black-box {
+  background-color: var(--black-bg-color);
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+.blogs-box-text {
+  padding: 63px 200px 49px 78px;
+}
+.blogs-pre-heading {
+  margin-bottom: 27px;
+}
+.blogs-box-heading {
+  margin-bottom: 60px;
+}
+.blogs-item {
+  padding: 48px;
+}
+.blogs-list-heading,
+.blogs-item-text {
+  margin-bottom: 16px;
+}
+.blogs-link-box:hover,
+.blogs-link-box:focus {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 @font-face {
