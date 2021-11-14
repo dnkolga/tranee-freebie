@@ -366,15 +366,3 @@ p {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-@font-face {
-  font-family: "Gilroy Regular";
-  src: url(/fonts/Gilroy-Regular.ttf);
-}
-@font-face {
-  font-family: "Gilroy Semibold";
-  src: url(/fonts/Gilroy-SemiBold.ttf);
-}
-@font-face {
-  font-family: "Gilroy Bold";
-  src: url(/fonts/Gilroy-Bold.ttf);
-}
